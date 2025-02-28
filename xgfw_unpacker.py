@@ -6,7 +6,7 @@ import argparse
 
 def get_all_column_names(directory_path):
     """
-	Each row in tbllog is stored as a JSON object inside a single column. My solution to misalligned columns between .db files on export requires we scan all .db files to collect a universal set of JSON keys. Returns a sorted list of unique column names. Super time intensive but the best solution without a .db schema and should be flexible for any updated version changes.
+	This Module is used to convert all .db files from the event logs directory of an XGFW into parsable .csv files. Each row in tbllog is stored as a JSON object inside a single column. My solution to misalligned columns between .db files on export requires we scan all .db files to collect a universal set of JSON keys. Returns a sorted list of unique column names. Super time intensive but the best solution without a .db schema and should be flexible for any updated version changes.
     """
     all_columns = set()
     total_files = len([f for f in os.listdir(directory_path) if f.endswith(".db")])

@@ -1,9 +1,8 @@
 import os
 import subprocess
 
-def display_ascii_art():
-    """ASCII Splash art."""
-    ascii_art = """
+def display_splash():
+    splash = """
                                ████████                  
                          █████████████████████           
                     █████████████████████████████        
@@ -35,7 +34,7 @@ def display_ascii_art():
        █   ██████████████████████                         
                  █████████                                
     """
-    print(ascii_art)
+    print(splash)
 
 def load_rules(rule_file, log_type, analysis_choice):
     """Load rules from the rule file based on the log type and analysis choice."""

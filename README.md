@@ -17,7 +17,6 @@ Tapestry is a **command-line tool** designed to process and analyze different ty
   - Generate Summary Reports
   - Run All Matching Rules
 - **Automatic results organization**: Output files are stored in `Tapestry_Results`.
-- **ASCII Art Banner**: Displays upon execution.
 
 ---
 

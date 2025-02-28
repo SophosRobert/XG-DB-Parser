@@ -1,6 +1,42 @@
 import os
 import subprocess
 
+def display_ascii_art():
+    """ASCII Splash art."""
+    ascii_art = """
+                               ████████                  
+                         █████████████████████           
+                    █████████████████████████████        
+                 ███████████     ███     ██████████      
+              █████████     ███████████       ███████    
+            ███████    ████████████████████     ██████   
+          ███████   ████████   ████  █████████   ██████  
+        ██████   ███████      ████        █████   ██████ 
+       █████   ██████         ████          ████   █████ 
+      █████   ████           █████           ████   █████
+    █████   ████            █████             ███   █████
+   ██████__████           ████████ _          ███    ████
+  █|__   __|██         ███████████| |         ███    ████
+  ████| |██__ _  _ __ ████████████| |_  _ __  ███ _  ████
+ █████| |█/ _` || '_ \██/ _ \/ __|| __|| '__|| |█| | ███ 
+ ████ | || (_| || |_) ||  __/\__ \| |_ | |   | |_| | ███ 
+█████ |_|█\__,_|| .__/██\___||___/ \__||_|  ██\__, | ██  
+████    ███     | |  ████████████          ████__/ | █   
+████    ███     |_| ███████████           ████|___/██    
+█████   ███        █████                 ████  ██████    
+█████   ████      ████                 ████   █████      
+ █████   ████   ████                █████   ██████       
+ █████    ████████                ██████  ██████         
+  ██████    ███████         █████████   ███████          
+   ██████   ██████████████████████    ███████            
+    █████████     ███████████     ████████               
+      █████████              ███████████                 
+        ████████████████████████████                     
+       █   ██████████████████████                         
+                 █████████                                
+    """
+    print(ascii_art)
+
 def load_rules(rule_file, log_type, analysis_choice):
     """Load rules from the rule file based on the log type and analysis choice."""
     rules = []
@@ -66,6 +102,7 @@ def get_valid_directory():
 
 def main():
     """Main menu system for Tapestry CLI."""
+    display_ascii_art()
     while True:
         print("\nTapestry - Log Analysis Tool")
         print("1. Log Analysis")
@@ -85,7 +122,7 @@ def main():
         print("\nLog Type Selection:")
         print("1. XGFW Event Logs")
         print("2. IIS")
-        print("3. General FW (Experimental)")
+        print("3. General FW (Experimental")
         print("4. General SSLVPN (Experimental)")
         log_type = get_valid_input("Select log type: ", ["1", "2", "3", "4"])
         

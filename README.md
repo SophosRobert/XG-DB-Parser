@@ -173,18 +173,3 @@ Tapestry_Results/
 - Support **custom output directories**.
 - Improve **Windows compatibility**.
 
----
-
-## Contributors
-
-- **Project Lead:** [Your Name]
-- **Contributors:** Open for contributions!
-
-For improvements or issues, please submit a pull request or report an issue.
-
----
-
-## License
-
-Tapestry is licensed under the **MIT License**. You are free to modify and distribute it.
-

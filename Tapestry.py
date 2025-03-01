@@ -101,7 +101,7 @@ def get_valid_directory():
 
 def main():
     """Main menu system for Tapestry CLI."""
-    display_ascii_art()
+    display_splash()
     while True:
         print("\nTapestry - Log Analysis Tool")
         print("1. Log Analysis")
